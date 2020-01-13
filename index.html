@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="AI.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700,800,900&display=swap&subset=latin-ext"
+    rel="stylesheet">
+  <script src="https://unpkg.com/brain.js@1.0.0-rc.3/browser.js"></script>
+  <link rel="shortcut icon" href="./img/brain.png" type="image/png">
+  <title>Di</title>
+  <!-- Need FavIcon -->
+</head>
+
+<body>
+  <div class="trainingContainer" id="trainingContainer">
+    <div class="dots">
+      <div class="dot dot_first trainGradient"></div>
+      <div class="dot dot_second trainGradient"></div>
+      <div class="dot dot_third trainGradient"></div>
+      <div class="dot dot_fourth trainGradient"></div>
+      <div class="dot dot_fifth trainGradient"></div>
+    </div>
+
+    <div class="trainArea" id="trainArea">
+      <input class="trainInpt trainMessage" id="trainMessage" type="text" placeholder="Message">
+      <input class="trainInpt trainAnswer" id="trainAnswer" type="text" placeholder="Answer">
+      <button class="trainBtn trainGradient" id="trainBtn">Train AI</button>
+    </div>
+  </div>
+
+  <button class="trainView" id="trainView">
+    <img src="./img/brain.png">
+  </button>
+
+  <div id="botVizual">
+    <img class="botAnim" id="botAnim" src="./img/speech.gif">
+  </div>
+
+  <div id="chat">
+    <input class="textBox" id="textBox" placeholder="Ask the bot anything!">
+    <button class="chatButton" id="chatButton">Chat</button>
+  </div>
+
+  <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
